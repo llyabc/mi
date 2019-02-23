@@ -156,10 +156,6 @@ a {
     z-index: 999; /*定位元素之间存在层级关系，z-index用来调整层级*/
 }
 
-/*.search-item:hover .item-detail {*/
-    /*height: 200px;*/
-    /*border: #b0b0b0 solid 1px;*/
-/*}*/
 
 /*鼠标移入时改变字体颜色*/
 .search-item:hover {
@@ -715,7 +711,9 @@ li.exposure::before {
 .phone-bd-special:hover {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
-
+.phone-bd-special:hover #phone-info-box{
+    margin-top: -5px;
+}
 .phone-bd-special img {
     width: 234px;
     height: 614px;
@@ -730,12 +728,15 @@ li.exposure::before {
 
 .phone-bd-info li {
     float: left;
+    /*transition: all linear 0.5s;*/
 }
 
 .phone-bd-info li:hover {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
-
+.phone-bd-info li:hover{
+    /*margin-top: -5px;*/
+}
 .phone-info {
     width: 234px;
     height: 300px;
@@ -946,7 +947,7 @@ li.exposure::before {
     position: absolute;
     top: 227px;
     background: #ff6700;
-    transition: all 0.2s linear;
+    /*transition: all 0.2s linear;*/
     overflow: hidden;
     z-index: 99;
 }
